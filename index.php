@@ -71,7 +71,7 @@ if(isset($_POST['registerform'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
+
   <title>C.C portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,8 +106,8 @@ if(isset($_POST['registerform'])){
   }
   .carousel-inner img {
       -webkit-filter: grayscale(90%);
-      filter: grayscale(90%); /* make all photos black and white */
-      width: 100%; /* Set width to 100% */
+      filter: grayscale(90%); 
+      width: 100%; 
       margin: auto;
   }
   .carousel-caption h3 {
@@ -115,7 +115,7 @@ if(isset($_POST['registerform'])){
   }
   @media (max-width: 600px) {
     .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+      display: none; 
     }
   }
   .bg-1 {
@@ -253,13 +253,11 @@ p {
 }
 
 
-/** LIGHTBOX MARKUP **/
-
 .lightbox {
-  /** Default lightbox to hidden */
+
   display: none;
 
-  /** Position and style */
+
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -271,7 +269,7 @@ p {
 }
 
 .lightbox img {
-  /** Pad the lightbox image */
+
   max-width: 200%;
   max-height: 190%;
   margin-top: 2%;
@@ -279,10 +277,9 @@ p {
 }
 
 .lightbox:target {
-  /** Remove default browser outline */
+
   outline: none;
 
-  /** Unhide lightbox **/
   display: block;
 }
   </style>
@@ -356,11 +353,11 @@ p {
 
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">klik hier voor de code van de inlog</button> 
 
-  <!-- Modal -->
+  
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
-      <!-- Modal content-->
+      
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -373,7 +370,7 @@ p {
   <img src="login.png" class="thumbnail">
 </a>
 
-<!-- lightbox container hidden with CSS -->
+          
 <a href="#_" class="lightbox" id="img1">
   <img src="login.png">
 </a>
@@ -394,7 +391,7 @@ p {
 
 
 
-<!-- Footer -->
+
 <footer class="text-center">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
@@ -404,31 +401,28 @@ p {
 
 <script>
 $(document).ready(function(){
-  // Initialize Tooltip
+
   $('[data-toggle="tooltip"]').tooltip();
   
-  // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
+    
     if (this.hash !== "") {
 
-      // Prevent default anchor click behavior
+      
       event.preventDefault();
 
-      // Store hash
+      
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+ 
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
+
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 })
 </script>
