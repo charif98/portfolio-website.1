@@ -256,45 +256,7 @@ if(isset($_POST['registerform'])){
 
  
 
-    <!-- Wrapper for slides 
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="code-1076533_960_720" alt="New York" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>The atmosphere in New York is lorem ipsum.</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="chicago.jpg" alt="Chicago" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago - A night we won't forget.</p>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="la.jpg" alt="Los Angeles" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>LA</h3>
-          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Left and right controls -
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div> --> 
-
-<!-- Container (The Band Section) -->
+   
 <center>
 <div id="band" class="container text-center">
 
@@ -338,31 +300,28 @@ if(isset($_POST['registerform'])){
 
 <script>
 $(document).ready(function(){
-  // Initialize Tooltip
+
   $('[data-toggle="tooltip"]').tooltip();
   
-  // Add smooth scrolling to all links in navbar + footer link
+
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
+
     if (this.hash !== "") {
 
-      // Prevent default anchor click behavior
       event.preventDefault();
 
-      // Store hash
+      
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 })
 </script>
