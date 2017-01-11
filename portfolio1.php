@@ -276,7 +276,7 @@ p {
  
 
    
-<!-- Container -->
+
 <div id="band" class="container text-center">
   <h3>OVER MIJ</h3>
   <p><em>Charif Cherkaoui</em></p>
@@ -321,14 +321,12 @@ p {
   </div>
 </div>
 
-<!-- Container  -->
+
 <div id="tour" class="bg-1">
   <div class="container">
     <h3 class="text-center">REACTIES</h3>
   
   
-
- <!-- <div class="container">-->
 
  <center> 
  <?php
@@ -366,11 +364,10 @@ foreach($items as $item){
 
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">zie hier de code</button> 
 
-  <!-- Modal -->
+
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
-      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -383,7 +380,7 @@ foreach($items as $item){
   <img src="toevoegen.png" class="thumbnail">
 </a>
 
-<!-- lightbox container hidden with CSS -->
+
 <a href="#_" class="lightbox" id="img1">
   <img src="toevoegen.png">
 </a>
@@ -413,43 +410,8 @@ foreach($items as $item){
   </div>
 </div> </center>
   
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
-        </div>
-        <div class="modal-body">
-          <form role="form">
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-              <input type="number" class="form-control" id="psw" placeholder="How many?">
-            </div>
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-            </div>
-              <button type="submit" class="btn btn-block">Pay
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
-          <p>Need <a href="#">help?</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Container-->
+
 <div id="contact" class="container">
   <h3 class="text-center">Contact</h3>
   
@@ -524,7 +486,7 @@ marker.setMap(map);
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
-<!-- Footer -->
+
 <footer class="text-center">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
@@ -534,31 +496,29 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <script>
 $(document).ready(function(){
-  // Initialize Tooltip
+
   $('[data-toggle="tooltip"]').tooltip();
   
-  // Add smooth scrolling to all links in navbar + footer link
+
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
+  
     if (this.hash !== "") {
 
-      // Prevent default anchor click behavior
+  
       event.preventDefault();
 
-      // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
+      
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 })
 </script>
